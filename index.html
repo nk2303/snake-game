@@ -25,35 +25,6 @@ Source code is available here: https://github.com/patorjk/JavaScript-Snake
     </style>
 <script>
 
-function getTheme () {
-    function changeTheme (Theme) {
-        document.getElementById('style').setAttribute('href', Theme);
-    }
-    var index = document.getElementById("select").selectedIndex;
-    switch (index) {
-        case 0: 
-          changeTheme('css/light-snake.css?' + Math.random());
-          break;
-        case 1: 
-          changeTheme('css/main-snake.css?' + Math.random());
-          break;
-        case 2: 
-          changeTheme('css/dark-snake.css?' + Math.random());
-          break;
-        case 3: 
-          changeTheme('css/green-snake.css?' + Math.random());
-          break;
-        case 4: 
-          changeTheme('css/matrix-snake.css?' + Math.random());
-          break;
-        default:
-          changeTheme('css/main-snake.css?' + Math.random());
-          break;
-    }
-    setTimeout(function() {
-        document.getElementById('game-area').focus();
-    }, 10);
-}
 
 if (navigator.onLine && window.location.hostname === 'patorjk.com') {
     var _gaq = _gaq || [];
@@ -71,16 +42,6 @@ if (navigator.onLine && window.location.hostname === 'patorjk.com') {
 <body>
     <div class="snake-toolbar">
       <div style="display:inline-block;margin-right:10px;">
-        <span>Theme:</span>
-        <select onchange="getTheme()" id="select">
-            <option>Light Theme by yokesharun</option>
-            <option selected>Main Theme by patorjk</option>
-            <option>Dark Theme by KenyStev</option>
-            <option>Green Theme by CoffeeCatDE</option>
-            <option>Matrix Theme by Geahad Haymor</option>
-        </select>
-      </div>
-      <div style="display:inline-block;margin-right:10px;">
         <span>Mode:</span>
         <select id="selectMode">
             <option value="100">Easy</option>
@@ -91,14 +52,6 @@ if (navigator.onLine && window.location.hostname === 'patorjk.com') {
       <button onclick="go_full_screen()">Full Screen</button><br />
     </div>
 
-    <!--
-      <h2>Select which mode you would like to play in.</h2>
-      <button id="Easy">Easy</button><br />
-      <button id="Medium">Medium</button><br />
-      <button id="Difficult">Difficult</button>
-
-<button id="high-score">Get your current high score for this game.</button>
--->
     <div id="mode-wrapper" style="display: inline; width: auto;">
     </div>
 
