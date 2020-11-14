@@ -30,6 +30,20 @@ a.snake-link:hover {
   color: #F9D2A5;
 }
 
+.selectMode option {
+    font-family: Share Tech Mono, monospace;
+}
+
+.snake-toolbar {
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    align-self: center;
+    z-index:10000;
+    padding: 5px;
+    font-family: Share Tech Mono, monospace;
+  }
+
 .snake-pause-screen {
     font-family: Share Tech Mono, monospace;
     font-size: 14px;
