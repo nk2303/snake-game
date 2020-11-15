@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <!--<html manifest="snake.appcache">-->
 <head>
-<!--
 
-JavaScript Snake
-By Patrick Gillespie
-http://patorjk.com/games/snake
-
-Source code is available here: https://github.com/patorjk/JavaScript-Snake
-
--->
     <meta charset="utf-8">
     <title>JavaScript Snake</title>
     <link rel=stylesheet id="style" type="text/css" href="./css/main-snake.css" />
@@ -32,7 +24,7 @@ if (navigator.onLine && window.location.hostname === 'patorjk.com') {
 </head>
 <body>
     <div class="snake-toolbar">
-      <div style="display:inline-block;align-self:center;">
+      <div style="display:inline-block;">
         <span>Mode:</span>
         <select id="selectMode">
             <option value="100">Easy</option>
@@ -41,9 +33,6 @@ if (navigator.onLine && window.location.hostname === 'patorjk.com') {
         </select>
       </div>
       <button onclick="go_full_screen()">Full Screen</button><br />
-    </div>
-
-    <div id="mode-wrapper" style="display: inline; width: auto;">
     </div>
 
     <div id="game-area" tabindex="0">

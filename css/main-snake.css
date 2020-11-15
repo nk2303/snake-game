@@ -5,19 +5,16 @@ body {
 	margin:0px;
 	padding:0px;
     background-color: #303847;
+    display: flex;
+    align-items: flex-start;
+    font-family: Share Tech Mono, monospace;
+    /* width: 100%; */
 }
 
 #game-area {
 	margin:10px;
 	padding:0px;
     background-color: #303847;
-}
-
-#mode-wrapper {
-    color: #ffffff;
-    font-family: Share Tech Mono, monospace;
-    font-size: 14px;
-
 }
 
 #game-area:focus { outline: none; }
@@ -30,22 +27,17 @@ a.snake-link:hover {
   color: #F9D2A5;
 }
 
-.selectMode option {
-    font-family: Share Tech Mono, monospace;
-}
-
 .snake-toolbar {
     position: absolute;
     top: 0;
-    /* left: 0; */
     align-self: center;
     z-index:10000;
-    padding: 5px;
-    font-family: Share Tech Mono, monospace;
+    padding: 5px 30px 0px 30px;
+    /* left:50%; */
+    width: 100%;
   }
 
 .snake-pause-screen {
-    font-family: Share Tech Mono, monospace;
     font-size: 14px;
     position:absolute;
     width:300px;
@@ -62,7 +54,6 @@ a.snake-link:hover {
 
 .snake-panel-component {
     position: absolute;
-    font-family: Share Tech Mono, monospace;
     font-size: 14px;
     color: #ffffff;
     text-align: center;
@@ -115,7 +106,6 @@ a.snake-link:hover {
     margin: 0px;
     background-color: #000000;
     color: #ffffff;
-    font-family: Share Tech Mono, monospace;
     font-size: 14px;
     position: absolute;
     top: 50%;
@@ -133,7 +123,6 @@ a.snake-link:hover {
     margin: 0px;
     background-color: #000000;
     color: #ffffff;
-    font-family: Share Tech Mono, monospace;
     font-size: 14px;
     position: absolute;
     top: 50%;
