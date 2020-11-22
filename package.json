@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patorjk/JavaScript-Snake.git"
+    "url": "git+https://github.com/nk2303/snake-game.git"
   },
   "author": "Ngan Kim Khong",
   "devDependencies": {
